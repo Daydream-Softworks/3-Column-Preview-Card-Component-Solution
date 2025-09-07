@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray-100: #f2f2f2;
+    --color-green-950: #004140;
+    --color-green-500: #19b89d;
+    --color-cyan-800: #006971;
+    --color-cyan-500: #26b5c0;
+    --color-gold-500: #e28625;
+    --color-gold-200: #ffd473;
+}
+
+.text-preset-1 {
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 120%;
+}
+
+.text-preset-2 {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 165%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-gray-100);
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    padding: 4.8rem;
+    max-width: 32.7rem;
+}
+
+.card-1 {
+    background-color: var(--color-gold-500);
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.card-2 {
+    background-color: var(--color-cyan-800);
+}
+
+.card-3 {
+    background-color: var(--color-green-950);
+    border-radius: 0 0 0.8rem 0.8rem;
+}
+
+img {
+    margin-bottom: 3.2rem;
+}
+
+h2 {
+    color: var(--color-white);
+    margin-bottom: 2.4rem;
+}
+
+p {
+    color: var(--color-white);
+    margin-bottom: 2.4rem;
+}
+
+button {
+    border: none;
+    padding: 0.8rem 3.2rem;
+    border-radius: 2.5rem;
+    background-color: var(--color-gray-100);
+    max-width: 14.7rem;
+    min-height: 4.8rem;
+}
+
+.card-1 button {
+    color: var(--color-gold-500);
+}
+
+.card-2 button {
+    color: var(--color-cyan-800);
+}
+
+.card-3 button {
+    color: var(--color-green-950);
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding: 4.8rem 8rem;
+        max-width: 60.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        flex-flow: row;
+    }
+
+    .card {
+        padding: 4.8rem;
+        max-width: 30.7rem;
+    }
+
+    .card-1 {
+        border-radius: 0.8rem 0 0 0.8rem;
+    }
+
+    .card-3 {
+        border-radius: 0 0.8rem 0.8rem 0;
+    }
+
+    img {
+        margin-bottom: 4rem;
+    }
+
+    p {
+        margin-bottom: 8rem;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        box-shadow: inset 0 0 0 2px var(--color-white);
+    }
+}
