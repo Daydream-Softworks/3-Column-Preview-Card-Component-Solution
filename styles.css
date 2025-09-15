@@ -87,6 +87,7 @@ button {
     background-color: var(--color-gray-100);
     max-width: 14.7rem;
     min-height: 4.8rem;
+    font-size: 1.4rem;
 }
 
 .card-1 button {
